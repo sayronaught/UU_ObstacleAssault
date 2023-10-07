@@ -23,5 +23,9 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	MyX = MyVector.X;
+	MyX += 5;
+	MyVector.Z = MyX;
+
 }
 
